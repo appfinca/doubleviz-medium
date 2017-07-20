@@ -15,16 +15,16 @@
 // ga('create', 'tracking-id', 'auto');
 // ga('send', 'pageview');
 
-$(document).ready(function () {
-    // $('window').on('activate.bs.scrollspy', function () {
-    //     console.log('123123');
-    //     alert('feature activated');
-    // });
-    var banner = $('#banner');
-    console.log('Banner height: ' + banner.outerHeight());
-    $(window).scroll(function (event) {
-        var scroll = $(window).scrollTop();
-        console.log(scroll);
-        // Do something
-    });
+$(document).ready(function() {
+  // $('window').on('activate.bs.scrollspy', function () {
+  //     console.log('123123');
+  //     alert('feature activated');
+  // });
+  var banner = $('#banner');
+  console.log('Banner height: ' + banner.outerHeight());
+  $(window).scroll(function(event) {
+    var scroll = $(window).scrollTop();
+    console.log(scroll);
+    // Do something
+  });
 });
