@@ -9,7 +9,7 @@ body {
 }
 
 h1 {
-  font-size: 1.75rem;
+  font-size: 2rem;
 }
 
 h2 {
@@ -17,7 +17,15 @@ h2 {
 }
 
 h3 {
-  font-size: 1.25rem;
+  font-size: 1.5rem;
+}
+
+.btn-circle {
+  height: 2.25rem;
+  width: 2.25rem;
+  padding: 0;
+  line-height: 2rem;
+  border-radius: 9999px;
 }
 
 @media (min-width: 576px) and (max-width: 767px) {
@@ -48,7 +56,7 @@ h3 {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  background-color: #3f6020;
+  background-color: #263913;
   background-image: url("../img/banner.svg");
   padding-top: 0;
   padding-bottom: 4rem;
@@ -91,15 +99,15 @@ h3 {
 }
 
 #banner .btn-main {
-  color: #263913;
-  background-color: #fff;
-  border-color: #fff;
-}
-
-#banner .btn:hover {
   color: #fff;
   background-color: #72af3a;
   border-color: #72af3a;
+}
+
+#banner .btn:hover {
+  color: #72af3a;
+  background-color: #fff;
+  border-color: #fff;
 }
 
 #banner .navbar-brand img {
@@ -176,15 +184,19 @@ section {
 }
 
 footer {
-  padding: 4rem;
+  padding: 1rem;
   color: #777;
   background-color: #333;
 }
 
 footer a {
-  color: #777
+  color: #777;
 }
 
 footer a:hover {
-  color: #bbb
+  color: #bbb;
+}
+
+footer .btn {
+  opacity: 0.7;
 }
