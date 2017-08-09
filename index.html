@@ -142,7 +142,7 @@
         <div class="col-12 col-md-10 col-lg-8 mt-3">
           <div class="d-flex flex-row-reverse justify-content-center align-items-center mx-2">
             <p class="ml-2 display-4">1.</p>
-            <p class="text-right">DoubleViz recommends guest posts that suit your audience, so you can publish them when you are too busy to write.</p>
+            <p class="text-right">When you are too busy to write, DoubleViz finds and publishes high-quality guest posts that suit your audience for you.</p>
           </div>
         </div>
       </div>
@@ -153,7 +153,7 @@
         <div class="col-12 col-md-10 col-lg-8 mt-3">
           <div class="d-flex justify-content-center align-items-center mx-2">
             <p class="mr-2 display-4">2.</p>
-            <p class="text-left">At each time your reader visits a recommended guest post, you earn a token.</p>
+            <p class="text-left">At each time your reader visits a guest post published by DoubleViz, you earn a token.</p>
           </div>
         </div>
       </div>
@@ -164,7 +164,7 @@
         <div class="col-12 col-md-10 col-lg-8 mt-3">
           <div class="d-flex flex-row-reverse justify-content-center align-items-center mx-2">
             <p class="ml-2 display-4">3.</p>
-            <p class="text-right">DoubleViz then converts each token to an extra read of your article by guest-posting your articles on others’ blogs.</p>
+            <p class="text-right">DoubleViz then converts each token to an extra read of your articles by guest-posting them on others’ blogs.</p>
           </div>
         </div>
       </div>
@@ -199,7 +199,7 @@
                 <div class="d-flex">
                   <p class="mr-3 display-4"><i class="fa fa-quote-left"></i></p>
                   <div>
-                    <p class="mt-4 words"><em>Super useful tool! It creates a win-win for all of us.</em></p>
+                    <p class="mt-4 words"><em>I’m impressed by the quality of guest posts found by AI.</em></p>
                     <p class="text-right">&mdash; Sebastian Lloyd</p>
                   </div>
                 </div>
@@ -214,7 +214,7 @@
                 <div class="d-flex">
                   <p class="mr-3 display-4"><i class="fa fa-quote-left"></i></p>
                   <div>
-                    <p class="mt-4 words"><em>When tired, I get covered by AI-backed guest posts.</em></p>
+                    <p class="mt-4 words"><em>The guest posts really get me covered when I’m tired to write.</em></p>
                     <p class="text-right">&mdash; Patricia W. Foss</p>
                   </div>
                 </div>
@@ -244,7 +244,7 @@
                 <div class="d-flex">
                   <p class="mr-3 display-4"><i class="fa fa-quote-left"></i></p>
                   <div>
-                    <p class="mt-4 words"><em>It makes me wondering how AI would disrupt WordPress.</em></p>
+                    <p class="mt-4 words"><em>I feel like I am growing like a ninja.</em></p>
                     <p class="text-right">&mdash; Emily Nolan</p>
                   </div>
                 </div>
@@ -278,16 +278,18 @@
         <div class="col-12 col-sm-10 col-lg-8">
           <div class="d-flex">
             <p class="mr-2 display-4">Q</p>
-            <p class="mr-2 mt-3 mb-0 text-left">Do I have to publish a post recommended by DoubleViz?</p>
-            <button type="button" class="btn btn-secondary align-self-end ml-auto" data-toggle="collapse" data-target="#faq-a1">
+            <p class="mr-2 mt-3 mb-0 text-left">How does a guest post look?</p>
+            <button type="button" class="btn btn-secondary align-self-end ml-auto" data-toggle="collapse" data-target="#faq-look">
                                 <i class="fa fa-angle-down"></i>
                             </button>
           </div>
         </div>
         <div class="col-12 col-sm-10 col-lg-8">
-          <div class="collapse" id="faq-a1">
+          <div class="collapse" id="faq-look">
             <div class="card card-block text-justify mt-2">
-              No. Just skip the recommendations you don’t like. You have full control of what to post on your own blog.
+              <p>By default, it looks like just a normal post. You can customize its look by defining templates. For example, a template</p>
+              <p class="text-center"><kbd>Guest Post: {{title}}</kdb></p>
+              <p class="mb-0">for title will let DoubleViz prefix the words “Guest Post: ” to the original title of every guest post.</p>
             </div>
           </div>
         </div>
@@ -296,16 +298,16 @@
         <div class="col-12 col-sm-10 col-lg-8">
           <div class="d-flex">
             <p class="mr-2 display-4">Q</p>
-            <p class="mr-2 mt-3 mb-0 text-left">How exactly does the AI find the matching blogs for me?</p>
-            <button type="button" class="btn btn-secondary align-self-end ml-auto" data-toggle="collapse" data-target="#faq-a2">
+            <p class="mr-2 mt-3 mb-0 text-left">How exactly does the AI find the matching articles/blogs for me?</p>
+            <button type="button" class="btn btn-secondary align-self-end ml-auto" data-toggle="collapse" data-target="#faq-ai">
                                 <i class="fa fa-angle-down"></i>
                             </button>
           </div>
         </div>
         <div class="col-12 col-sm-10 col-lg-8">
-          <div class="collapse" id="faq-a2">
+          <div class="collapse" id="faq-ai">
             <div class="card card-block text-justify mt-2">
-              DoubleViz first analyzes your content using the Deep Learning (DL) and Natural Language Processing (NLP) so to understand your writing styles, interested subjects, and other factors. It then recommends articles with similar style and/or related subjects
+              DoubleViz first analyzes your content using the Deep Learning (DL) and Natural Language Processing (NLP) techniques so to understand your writing styles, interested subjects, and other factors. It then publish on your blog the guest posts with similar style and/or related subjects
               that can enrich your blog. Similarly, it posts your articles on other blogs having the right audience to create genuine reads for you.
             </div>
           </div>
@@ -316,16 +318,15 @@
           <div class="d-flex">
             <p class="mr-2 display-4">Q</p>
             <p class="mr-2 mt-3 mb-0 text-left">Do I have control over the AI?</p>
-            <button type="button" class="btn btn-secondary align-self-end ml-auto" data-toggle="collapse" data-target="#faq-a3">
+            <button type="button" class="btn btn-secondary align-self-end ml-auto" data-toggle="collapse" data-target="#faq-control">
                                 <i class="fa fa-angle-down"></i>
                             </button>
           </div>
         </div>
         <div class="col-12 col-sm-10 col-lg-8">
-          <div class="collapse" id="faq-a3">
+          <div class="collapse" id="faq-control">
             <div class="card card-block text-justify mt-2">
-              Yes. By default, DoubleViz saves your time by automating things. But you can opt into manual controls. For example, you can set a blacklist of words (such as the names of your competitors) to prevent the containing posts from being recommended. You can
-              decide whether to publish a recommend guest post on your blog or not. You can also tell DoubeViz when to make recommendations such that it fits your schedule.
+              Yes. Although DoubleViz saves your time by automating things, you can still opt into lots of manual controls. For example, you can tell us your precise topics using tags, set a blacklist of words (such as the names of your competitors) to prevent the containing posts from showing on your blog, and remove a guest post published by DoubleViz if you don’t like it. You can also tell DoubeViz when to publish new guest posts such that it fits your schedule.
             </div>
           </div>
         </div>
@@ -335,16 +336,15 @@
           <div class="d-flex">
             <p class="mr-2 display-4">Q</p>
             <p class="mr-2 mt-3 mb-0 text-left">Does DoubleViz do anything good to SEO?</p>
-            <button type="button" class="btn btn-secondary align-self-end ml-auto" data-toggle="collapse" data-target="#faq-a4">
+            <button type="button" class="btn btn-secondary align-self-end ml-auto" data-toggle="collapse" data-target="#faq-seo">
                                 <i class="fa fa-angle-down"></i>
                             </button>
           </div>
         </div>
         <div class="col-12 col-sm-10 col-lg-8">
-          <div class="collapse" id="faq-a4">
+          <div class="collapse" id="faq-seo">
             <div class="card card-block text-justify mt-2">
-              Probably. A search engine may crawl the blog pages that guest-post your articles and link back to your blog. This creates positive effects on SEO. However, please don’t take DoubleViz as an SEO tool since it is not optimized for creating backlinks. DoubleViz
-              is optimized for increasing genuine reads.
+              Probably. DoubleViz creates backlinks to your blog when guest-posting your articles on other blogs. This creates positive effects on SEO. However, please don’t take DoubleViz as an SEO tool since it is not optimized for increasing backlinks. DoubleViz is optimized for creating genuine reads of your articles.
             </div>
           </div>
         </div>
@@ -389,8 +389,9 @@
     </div>
     <div class="row justify-content-center mb-5">
       <div class="col-10 col-sm-8 col-lg-6">
-        <p>We are bloggers, programmers, and AI/Machine Learning experts who want to make good content visible.</p>
-        <p>Contact: <a href="mailto:support@doubleviz.com">support@doubleviz.com</a></p>
+        <p>We are bloggers, programmers, and AI/Machine Learning experts who want to make good content visible. Contact us via <a href="mailto:support@doubleviz.com">support@doubleviz.com</a> for any question/suggestion.</p>
+        <p></p>
+        <p>Like DoubleViz? Share it on:</p>
         <p><a class="btn btn-outline-secondary btn-circle" href="https://twitter.com/intent/tweet?text=http%3A%2F%2Fwww.doubleviz.com&hashtags=doubleviz" role="button" target="_blank"><i class="fa fa-twitter" role="button"></i></a> &nbsp;
           <a class="btn btn-outline-secondary btn-circle" href="http://www.facebook.com/share.php?u=www.doubleviz.com&title=DoubleViz" role="button" target="_blank"><i class="fa fa-facebook"></i></a></p>
         <p>&copy; 2017 DoubleViz All Rights Reserved.</p>
