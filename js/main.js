@@ -27,4 +27,39 @@ $(document).ready(function() {
     console.log(scroll);
     // Do something
   });
+
+  $('.cta').click(function(e) {
+    setTimeout(function() {
+      $('#modal').modal('show');
+    }, 700);
+  });
+
+  $('#modal').on('shown.bs.modal', function(e) {
+    $('#form-input').focus();
+  });
+  $('#form-input').change(function(e) {
+    var email = $(this).val();
+    if (email !== null && isEmail(email)) {
+      $(this).parent().removeClass("has-danger");
+      $(this).removeClass("form-control-danger");
+    } else {
+      $(this).parent().addClass("has-danger");
+      $(this).addClass("form-control-danger");
+    }
+  });
+  $('#form').submit(function(e) {
+    var email = $('#form-input').val();
+    if (email === null || !isEmail(email)) {
+      return false;
+    }
+
+    setTimeout(function() {
+      $('#modal').modal('hide');
+    }, 500);
+  });
 });
+
+function isEmail(email) {
+  var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,6})$/;
+  return regex.test(email);
+}

@@ -72,13 +72,13 @@ h3 {
 #banner .title {
   /*font-size: 1.75rem;*/
   margin-top: 4rem;
-  margin-bottom: 1rem;
+  margin-bottom: 0.75rem;
 }
 
 #banner .subtitle {
   /*font-size: 1.25rem;*/
   font-weight: 300;
-  margin-bottom: 6rem;
+  margin-bottom: 8rem;
 }
 
 #banner .date {
@@ -88,13 +88,13 @@ h3 {
 
 @media (min-width: 576px) and (max-width: 767px) {
   #banner .title {
-    margin-bottom: 1.75rem;
+    margin-bottom: 1.25rem;
   }
 }
 
 @media (min-width: 768px) {
   #banner .title {
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
   }
 }
 
@@ -133,6 +133,18 @@ h3 {
 .logo-last {
   color: #f0ad4e;
   font-weight: bold;
+}
+
+.modal {
+  margin-top: 4rem;
+}
+
+.modal-header {
+  border-bottom-width: 0;
+}
+
+.modal-footer {
+  border-top-width: 0;
 }
 
 
@@ -174,7 +186,7 @@ section {
 }
 
 #help .btn:hover {
-  color: #f0ad4e;
+  color: #72af3a;
   background-color: #fff;
   border-color: #fff;
 }
