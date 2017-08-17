@@ -1,42 +1,38 @@
 // Google Analytics
-// (function (i, s, o, g, r, a, m) {
-//     i['GoogleAnalyticsObject'] = r;
-//     i[r] = i[r] || function () {
-//         (i[r].q = i[r].q || []).push(arguments)
-//     }, i[r].l = 1 * new Date();
-//     a = s.createElement(o),
-//         m = s.getElementsByTagName(o)[0];
-//     a.async = 1;
-//     a.src = g;
-//     m.parentNode.insertBefore(a, m)
-// })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
-//
-// // TODO add your tracking id here
-// ga('create', 'tracking-id', 'auto');
-// ga('send', 'pageview');
+(function(i, s, o, g, r, a, m) {
+  i['GoogleAnalyticsObject'] = r;
+  i[r] = i[r] || function() {
+    (i[r].q = i[r].q || []).push(arguments)
+  }, i[r].l = 1 * new Date();
+  a = s.createElement(o),
+  m = s.getElementsByTagName(o)[0];
+  a.async = 1;
+  a.src = g;
+  m.parentNode.insertBefore(a, m)
+})(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+ga('create', 'UA-18358274-4', 'auto');
+ga('send', 'pageview');
 
 $(document).ready(function() {
-  // $('window').on('activate.bs.scrollspy', function () {
-  //     console.log('123123');
-  //     alert('feature activated');
-  // });
-  var banner = $('#banner');
-  console.log('Banner height: ' + banner.outerHeight());
-  $(window).scroll(function(event) {
-    var scroll = $(window).scrollTop();
-    console.log(scroll);
-    // Do something
+  // Google Analytics
+  $('a, button').click(function(e) {
+    if (this.id) {
+      ga('send', 'event', 'dubleviz', this.id);
+    }
   });
 
+  // CTA and Modal
   $('.cta').click(function(e) {
     setTimeout(function() {
       $('#modal').modal('show');
     }, 700);
   });
-
   $('#modal').on('shown.bs.modal', function(e) {
     $('#form-input').focus();
   });
+
+  // Modal Form
   $('#form-input').change(function(e) {
     var email = $(this).val();
     if (email !== null && isEmail(email)) {
@@ -52,7 +48,6 @@ $(document).ready(function() {
     if (email === null || !isEmail(email)) {
       return false;
     }
-
     setTimeout(function() {
       $('#modal').modal('hide');
     }, 500);

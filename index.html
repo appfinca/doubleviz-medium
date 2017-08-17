@@ -76,8 +76,8 @@
               <a class="nav-link" href="#footer">About</a>
             </li>
             <li class="nav-item mt-2 mt-sm-0 ml-sm-2">
-              <a class="btn btn-outline-secondary btn-circle" href="https://twitter.com/intent/tweet?text=http%3A%2F%2Fwww.doubleviz.com&hashtags=doubleviz" role="button" target="_blank"><i class="fa fa-twitter" role="button"></i></a> &nbsp;
-              <a class="btn btn-outline-secondary btn-circle" href="http://www.facebook.com/share.php?u=www.doubleviz.com&title=DoubleViz" role="button" target="_blank"><i class="fa fa-facebook"></i></a>
+              <a id="share-tw-top" class="btn btn-outline-secondary btn-circle" href="https://twitter.com/intent/tweet?text=http%3A%2F%2Fwww.doubleviz.com&hashtags=doubleviz" role="button" target="_blank"><i class="fa fa-twitter" role="button"></i></a> &nbsp;
+              <a  id="share-fb-top" class="btn btn-outline-secondary btn-circle" href="http://www.facebook.com/share.php?u=www.doubleviz.com&title=DoubleViz" role="button" target="_blank"><i class="fa fa-facebook"></i></a>
             </li>
           </ul>
         </div>
@@ -85,7 +85,7 @@
       <div class="text-center">
         <h1 class="banner-text title">WordPress Growth Automation</h1>
         <h3 class="banner-text subtitle">Uses AI/Deep Learning to double your speed of growth.</h3>
-        <button type="button" class="btn btn-lg btn-outline-success btn-main cta">Get DoubleViz Now</a>
+        <button id="cta-top" type="button" class="btn btn-lg btn-outline-success btn-main cta">Get DoubleViz Now</a>
       </div>
     </div>
   </header>
@@ -105,7 +105,7 @@
             <input id="form-input" class="form-control" name="entry.1973622156" />
           </div>
           <div class="modal-footer">
-            <div>No spam, serially.</div>
+            <div>No spam, seriously.</div>
             <input type="submit" class="btn btn-success" value="Send" />
           </div>
         </form>
@@ -276,11 +276,11 @@
           </div>
         </div>
       </div>
-      <a class="carousel-control-prev" href="#feedback-carousel" role="button" data-slide="prev">
+      <a id="feedback-prev" class="carousel-control-prev" href="#feedback-carousel" role="button" data-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="sr-only">Previous</span>
             </a>
-      <a class="carousel-control-next" href="#feedback-carousel" role="button" data-slide="next">
+      <a id="feedback-next" class="carousel-control-next" href="#feedback-carousel" role="button" data-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="sr-only">Next</span>
             </a>
@@ -302,13 +302,13 @@
           <div class="d-flex">
             <p class="mr-2 display-4">Q</p>
             <p class="mr-2 mt-3 mb-0 text-left">Do I have to publish a post recommended by DoubleViz?</p>
-            <button type="button" class="btn btn-secondary align-self-end ml-auto" data-toggle="collapse" data-target="#faq-publish">
+            <button id="faq-publish" type="button" class="btn btn-secondary align-self-end ml-auto" data-toggle="collapse" data-target="#collapse-publish">
                             <i class="fa fa-angle-down"></i>
                         </button>
       </div>
     </div>
     <div class="col-12 col-sm-10 col-lg-8">
-      <div class="collapse" id="faq-publish">
+      <div class="collapse" id="collapse-publish">
         <div class="card card-block text-justify mt-2">
           No. You can review the recommended posts before they get published and remove the ones you don’t like. You have full control of what to post on your own blog.
         </div>
@@ -320,13 +320,13 @@
         <div class="d-flex">
           <p class="mr-2 display-4">Q</p>
           <p class="mr-2 mt-3 mb-0 text-left">How exactly does the AI find the matching articles/blogs for me?</p>
-          <button type="button" class="btn btn-secondary align-self-end ml-auto" data-toggle="collapse" data-target="#faq-ai">
+          <button id="faq-ai" type="button" class="btn btn-secondary align-self-end ml-auto" data-toggle="collapse" data-target="#collapse-ai">
                             <i class="fa fa-angle-down"></i>
                         </button>
         </div>
       </div>
       <div class="col-12 col-sm-10 col-lg-8">
-        <div class="collapse" id="faq-ai">
+        <div class="collapse" id="collapse-ai">
           <div class="card card-block text-justify mt-2">
             DoubleViz first analyzes your content using the Deep Learning (DL) and Natural Language Processing (NLP) techniques so to understand your writing styles, interested subjects, and other factors. It then recommends guest posts with similar style and/or
             related subjects that can enrich your blog. Similarly, it posts your articles on other blogs having the right audience to create genuine reads for you.
@@ -339,13 +339,13 @@
         <div class="d-flex">
           <p class="mr-2 display-4">Q</p>
           <p class="mr-2 mt-3 mb-0 text-left">Do I have control over the AI?</p>
-          <button type="button" class="btn btn-secondary align-self-end ml-auto" data-toggle="collapse" data-target="#faq-control">
+          <button id="faq-control" type="button" class="btn btn-secondary align-self-end ml-auto" data-toggle="collapse" data-target="#collapse-control">
                             <i class="fa fa-angle-down"></i>
                         </button>
         </div>
       </div>
       <div class="col-12 col-sm-10 col-lg-8">
-        <div class="collapse" id="faq-control">
+        <div class="collapse" id="collapse-control">
           <div class="card card-block text-justify mt-2">
             Yes. Although DoubleViz automates your growth and saves your time, you can still control a lot of things. For example, you can tell us your precise topics using tags so the AI can make better recommendations and/or post your articles on better matching
             blogs. You can set a blacklist of words (such as the names of your competitors) to prevent the containing posts from being recommended. You can review the recommended posts and remove the ones you don't like before they get published. You
@@ -359,13 +359,13 @@
         <div class="d-flex">
           <p class="mr-2 display-4">Q</p>
           <p class="mr-2 mt-3 mb-0 text-left">How do my posts look on other blogs?</p>
-          <button type="button" class="btn btn-secondary align-self-end ml-auto" data-toggle="collapse" data-target="#faq-look">
+          <button id="faq-look" type="button" class="btn btn-secondary align-self-end ml-auto" data-toggle="collapse" data-target="#collapse-look">
                             <i class="fa fa-angle-down"></i>
                         </button>
         </div>
       </div>
       <div class="col-12 col-sm-10 col-lg-8">
-        <div class="collapse" id="faq-look">
+        <div class="collapse" id="collapse-look">
           <div class="card card-block text-justify mt-2">
             <p>It depends on the owner of the blog where a post is published. The owner cannot modify your original title nor content but can prepend/append words to the title (such as “Guest Post: ”) and write a paragraph as an introduction shown before
               your content. Similarly, you can do the same to the recommended guest posts on you blog.
@@ -381,13 +381,13 @@
         <div class="d-flex">
           <p class="mr-2 display-4">Q</p>
           <p class="mr-2 mt-3 mb-0 text-left">Does DoubleViz do anything good to SEO?</p>
-          <button type="button" class="btn btn-secondary align-self-end ml-auto" data-toggle="collapse" data-target="#faq-seo">
+          <button id="faq-seo" type="button" class="btn btn-secondary align-self-end ml-auto" data-toggle="collapse" data-target="#collapse-seo">
                             <i class="fa fa-angle-down"></i>
                         </button>
         </div>
       </div>
       <div class="col-12 col-sm-10 col-lg-8">
-        <div class="collapse" id="faq-seo">
+        <div class="collapse" id="collapse-seo">
           <div class="card card-block text-justify mt-2">
             Probably. DoubleViz creates backlinks to your blog when guest-posting your articles on other blogs. This creates positive effects on SEO. However, please don’t take DoubleViz as an SEO tool since it is not optimized for increasing backlinks. DoubleViz
             is optimized for creating genuine reads of your articles.
@@ -447,7 +447,7 @@
         </div>
         <div class="row justify-content-center">
           <div class="col-12">
-            <button type="button" class="btn btn-lg btn-success cta">Get DoubleViz Now</button>
+            <button id="cta-bottomp" type="button" class="btn btn-lg btn-success cta">Get DoubleViz Now</button>
           </div>
         </div>
       </div>
@@ -464,8 +464,8 @@
           <p>We are bloggers, programmers, and AI/Deep Learning experts who want to make good content visible. Contact us via <a href="mailto:support@doubleviz.com">support@doubleviz.com</a> for any question/suggestion.</p>
           <p></p>
           <p>Like DoubleViz? Share it on:</p>
-          <p><a class="btn btn-outline-secondary btn-circle" href="https://twitter.com/intent/tweet?text=http%3A%2F%2Fwww.doubleviz.com&hashtags=doubleviz" role="button" target="_blank"><i class="fa fa-twitter" role="button"></i></a> &nbsp;
-            <a class="btn btn-outline-secondary btn-circle" href="http://www.facebook.com/share.php?u=www.doubleviz.com&title=DoubleViz" role="button" target="_blank"><i class="fa fa-facebook"></i></a></p>
+          <p><a id="share-tw-bottom" class="btn btn-outline-secondary btn-circle" href="https://twitter.com/intent/tweet?text=http%3A%2F%2Fwww.doubleviz.com&hashtags=doubleviz" role="button" target="_blank"><i class="fa fa-twitter" role="button"></i></a> &nbsp;
+            <a id="share-fb-bottom" class="btn btn-outline-secondary btn-circle" href="http://www.facebook.com/share.php?u=www.doubleviz.com&title=DoubleViz" role="button" target="_blank"><i class="fa fa-facebook"></i></a></p>
           <p>&copy; 2017 DoubleViz All Rights Reserved.</p>
         </div>
       </div>
