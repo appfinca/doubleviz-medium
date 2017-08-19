@@ -3,7 +3,8 @@
   i['GoogleAnalyticsObject'] = r;
   i[r] = i[r] || function() {
     (i[r].q = i[r].q || []).push(arguments)
-  }, i[r].l = 1 * new Date();
+  },
+  i[r].l = 1 * new Date();
   a = s.createElement(o),
   m = s.getElementsByTagName(o)[0];
   a.async = 1;
@@ -15,10 +16,13 @@ ga('create', 'UA-18358274-4', 'auto');
 ga('send', 'pageview');
 
 $(document).ready(function() {
+  parseQueryString();
+  var referrer = location.queryString.ref || document.referrer;
+
   // Google Analytics
   $('a, button').click(function(e) {
     if (this.id) {
-      ga('send', 'event', 'dubleviz', this.id);
+      ga('send', 'event', 'doubleviz' + window.location.pathname, this.id, referrer);
     }
   });
 
@@ -53,6 +57,16 @@ $(document).ready(function() {
     }, 500);
   });
 });
+
+function parseQueryString() {
+  location.queryString = {};
+  location.search.substr(1).split("&").forEach(function(pair) {
+    if (pair === "")
+      return;
+    var parts = pair.split("=");
+    location.queryString[parts[0]] = parts[1] && decodeURIComponent(parts[1].replace(/\+/g, " "));
+  });
+}
 
 function isEmail(email) {
   var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,6})$/;
