@@ -17,7 +17,7 @@ ga('send', 'pageview');
 
 $(document).ready(function() {
   parseQueryString();
-  var referrer = location.queryString.ref || document.referrer;
+  var referrer = location.queryString.ref || document.referrer || 'direct';
 
   // Google Analytics
   $('a, button').click(function(e) {
