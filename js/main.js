@@ -22,7 +22,7 @@ $(document).ready(function() {
   // Google Analytics
   $('a, button').click(function(e) {
     if (this.id) {
-      ga('send', 'event', 'doubleviz' + window.location.pathname, this.id, referrer);
+      ga('send', 'event', referrer, this.id, 'doubleviz' + window.location.pathname);
     }
   });
 
@@ -52,6 +52,7 @@ $(document).ready(function() {
     if (email === null || !isEmail(email)) {
       return false;
     }
+    ga('send', 'event', referrer, 'modal-email', 'doubleviz' + window.location.pathname);
     setTimeout(function() {
       $('#modal').modal('hide');
     }, 500);
