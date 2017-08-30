@@ -16,6 +16,9 @@ ga('create', 'UA-18358274-6', 'auto');
 ga('send', 'pageview');
 
 $(document).ready(function() {
+  // GA Scroll Depth plugin
+  jQuery.scrollDepth();
+
   parseQueryString();
   var referrer = location.queryString.ref || document.referrer || 'direct';
 
