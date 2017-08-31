@@ -58,7 +58,7 @@ h3 {
   background-position: center;
   /*background-color: #263913;*/
   background-color: #333;
-  background-image: url("../img/banner-2.jpg");
+  background-image: url("../img/banner-2-small.jpg");
   padding-top: 0;
   padding-bottom: 4rem;
   margin: 0;
@@ -66,6 +66,7 @@ h3 {
 
 @media (min-width: 768px) {
   #banner {
+    background-image: url("../img/banner-2.jpg");
     background-attachment: fixed;
   }
 }
