@@ -56,7 +56,8 @@ h3 {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  background-color: #263913;
+  /*background-color: #263913;*/
+  background-color: #333;
   background-image: url("../img/banner-2.jpg");
   padding-top: 0;
   padding-bottom: 4rem;
